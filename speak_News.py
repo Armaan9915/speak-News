@@ -10,7 +10,7 @@ try:
         import json
         url = ('http://newsapi.org/v2/top-headlines?'
             'country=in&'
-            'apiKey=apiKey')
+            'apiKey=apiKey') ### replace the apikey to your apikey value
         response = requests.get(url)
         text = response.text
         jscomp = json.loads(text)
